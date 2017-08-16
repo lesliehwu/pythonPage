@@ -1,25 +1,37 @@
+*{
+	margin:0px;
+	padding: 0px;
+	font-family: Arial;
+}
+
 #big_blue{
-	background-color:blue;
-	height:300px;
+	background-color:#265175;
+	/*height:400px;*/
+	color: white;
+	padding: 10px;
 }
 
 #white{
 	background-color:white;
-	height:100px;
+	height:240px;
+	text-align: center;
 }
 
 #small_blue{
-	background-color:blue;
-	height:50px;
-
+	/*background-color:blue;*/
+	/*height:60px;*/
+	background: linear-gradient(#234875,#3173c4);
+	padding-top: 60px;
 }
 
 .white_blurb{
 	display:inline-block;
 	text-align:center;
-	width:48%;
-	height:100%;
-	margin:-2px;
+	width:34%;
+	vertical-align: top;
+	margin: 20px;
+	border-top-style: solid;
+	border-top-color: cornflowerblue;
 }
 
 .little_blue{
@@ -27,16 +39,25 @@
 	text-align:center;
 	height:48%;
 	display:inline-block;
+	padding-top: 10px;
 }
 
-#header{
+/*#header{
 	height:15%;
-}
+}*/
 
 #nav_bar{
-	height:15%;
-	display:inline-block;
+	/*height:15%;*/
+	display:block;
 	text-align:center;
+	background-color: cornflowerblue;
+	color: white;
+	font-size: 18pt;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	box-shadow: 2px 2px black;
 }
 
 #side_menu{
@@ -50,6 +71,15 @@
 	text-align:center;
 	color:yellow;
 	list-style-position:inside;
+}
+#side_menu ul{
+	list-style: none;
+	line-height: 150%;
+	padding-top: 30px;
+}
+
+#side_menu ul li:before{
+	content: "\00BB";
 }
 
 #side_menu a{
@@ -68,30 +98,58 @@
 	display:inline-block;
 	width:100%;
 	height:20%;
+	margin-top: 15px;
 }
 
 #icon{
 	display:inline-block;
-	width:40%;
+	width:49%;
 	height:100%;
 }
 
 #search_box{
 	display:inline-block;
-	width:66%;
+	width:49%;
 	height:100%;
 	margin-right:0px;
 	margin-left:auto;
 	text-align:right;
 	vertical-align:top;
+	margin-top: -10px;
 
+}
+
+#yellowQuote{
+	color: yellow;
+	font-style: italic;
+	font-size: 14pt;
+	line-height: 150%;
+}
+
+#blurbJunk{
+	font-size: 10pt;
 }
 
 #search_bar{
-	background-color:green;
+	background-color:gray;
 	padding:10px;
 	text-align:center;
+	width:40%;
+	margin-left: auto;
+	margin-right: 0px;
+	border-radius: 6px;
+	box-shadow: 2px 2px black;
+	margin-top: -10px;
 }
+
+input[type=text]{
+	width: 150px;
+	text-align: center;
+	padding: 6px;
+}
+/*input[type="search_bar"]{
+	background-color: white;
+}*/
 
 #logo{
 	width:300px;
@@ -102,14 +160,66 @@
 
 #text_option{
 	width:auto;
-	height:10%;
+	/*height:10%;*/
+}
+
+#text_option a{
+	color: yellow;
 }
 
 button{
 	display:inline-block;
+	padding: 6px;
+	border-radius: 6px;
+	background-color: #265175;
+	color: white;
+	box-shadow: 1px 1px black;
 }
 
 #nav_bar li{
 	display:inline;
+	padding: 10px;
 }
 
+#nav_bar ul{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.white_blurb h3{
+	display: inline-block;
+	width: auto;
+	/*padding-top: 20px;*/
+}
+
+.white_blurb a:link{
+	color: cornflowerblue;
+	text-decoration: none;
+}
+
+/*.white_blurb li{
+	display: inline;
+	list-style-position: inside;
+}*/
+
+.white_blurb ul{
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+.little_blue li{
+	display: inline;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.little_blue a{
+	color: cornflowerblue;
+	vertical-align: middle;
+}
+
+.little_blue p{
+	font-size: 8pt;
+	vertical-align: bottom;
+	color: cornflowerblue;
+}
